@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://192.168.0.103:27017/E-Restraurent',{
+
+mongoose.connect('mongodb://127.0.0.1:27017/E-Restraurent',{
     useNewUrlParser:true,
     useCreateIndex:true
 })

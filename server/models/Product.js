@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-exports.Product = mongoose.model('Product', {
+var Product = mongoose.model('Product', {
     name: {
         type:String,
         required:true
@@ -26,3 +26,4 @@ exports.Product = mongoose.model('Product', {
     }
 })
 
+module.exports = Product;
