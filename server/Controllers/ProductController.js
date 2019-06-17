@@ -30,7 +30,7 @@ app.get('/products/:name', (req,res) =>{
 app.post('/products', (req,res) => {
     const product = new Product(req.body)
     product.save().then(() =>{
-        res.send(product)
+        res.status(200).send(product)
     }).catch((err) => {
         res.status(400).send(err)
     })
